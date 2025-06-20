@@ -1,4 +1,6 @@
-const fs = require('fs');
+
+
+fs = require('fs');
 
 console.log('Start');
 
@@ -15,7 +17,7 @@ fs.readFile('test.txt', (error) => {
     console.log('Timeout callback executed');
   }, 0);
   
-  setImmediate(() => {
+  setImmediate(  () => {
     console.log('Immediate callback executed');
   });
 
